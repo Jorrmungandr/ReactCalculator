@@ -2,7 +2,7 @@
   "name": "reactcalculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Jorrmungandr.github.io/ReactCalculator",
+  "homepage": "http://github/Jorrmungandr/ReactCalculator",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
