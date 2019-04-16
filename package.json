@@ -10,6 +10,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "fstart": "npm i && react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
