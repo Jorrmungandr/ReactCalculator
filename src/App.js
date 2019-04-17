@@ -22,11 +22,17 @@ const NumPad = () => {
   );
 };
 
+const Input = (props) => {
+  return (
+    <input type="text" class="input"></input>
+  )
+}
+
 class Button extends Component {
   constructor(props) {
     super(props);
     this.handleMouseClick = this.handleMouseClick.bind(this);
-    this.state = { text : this.props.text};
+    this.state = { text: this.props.text };
   }
 
   handleMouseClick(event) {
@@ -48,17 +54,19 @@ class Calculator extends Component {
   constructor(props) {
     super(props);
     this.handleMouseClick = this.handleMouseClick.bind(this);
-    this.state = { status: "#40e0d0" };
+    this.state = {
+      status: "#40e0d0",
+    };
   }
 
   handleMouseClick(event) {
-    if (this.state.status === "#111") {
+    if (this.state.status === "#010203") {
       this.setState({
         status: "#40e0d0"
       });
     } else {
       this.setState({
-        status: "#111"
+        status: "#010203"
       });
     }
   }
@@ -66,6 +74,7 @@ class Calculator extends Component {
   render() {
     return (
       <div style={{ color: this.state.status }} onClick={this.handleMouseClick}>
+        <Input value={"hello"} />
         <NumPad />
       </div>
     );
